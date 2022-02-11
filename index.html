@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practice</title>
+</head>
+<body>
+    <style>
+        .center{
+            text-align: center;
+        }
+        div{
+            display: inline-block;
+            height:fit-content;
+            width:27%;
+        }
+        .container{
+            display: flex;
+            width: 95%;
+            justify-content: space-between;
+            /*flex-direction: row-reverse;*/
+        }
+        .change-my-border{
+            border: 1px solid red;
+        }
+        .change-my-background{
+            background-color: blueviolet;
+        }
+        .playing-with-margins{
+            margin: 10px;
+        }
+        /*media query for mobile*/
+        @media screen and (max-width: 600px){
+            .container{
+                flex-direction: column;
+            }
+            div{
+                width: 95%;
+                height: fit-content;
+                margin-top: 3%;
+                margin-bottom: 3%;
+            }
+            .change-my-border{
+                border: 1px solid red;
+            }
+            .change-my-background{
+                background-color: blueviolet;
+            }
+            .playing-with-margins{
+                margin: 10px;
+            }
+        }
+    </style>
+    <h1 class="center">Let's play with CSS!</h1>
+    <!-- Three divs in a row, each to get different styles -->
+    <div class="container">
+        <div class="change-my-border">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum corporis libero odit, voluptates rerum, autem illum delectus maiores praesentium nihil optio inventore dolorem veritatis sequi, vero atque asperiores magni ab!</div>
+        <div class="change-my-background">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus expedita recusandae nostrum necessitatibus id suscipit distinctio blanditiis vero, obcaecati accusantium? Nisi, consequatur recusandae. Laudantium quas quis explicabo iusto dolorum!</div>
+        <div class="playing-with-margins">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In accusantium, modi odio perspiciatis optio laboriosam? Necessitatibus tenetur optio, accusantium aspernatur fuga facilis, eaque blanditiis soluta voluptatem excepturi ipsum nobis laborum.</div>
+    </div>
+</body>
+</html>
